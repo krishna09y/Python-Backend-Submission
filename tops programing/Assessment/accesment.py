@@ -17,7 +17,7 @@ def add_student():
         "name": name,
         "course": course
     }
-    print("Student added successfully!\n")
+    print("Student added successfully!")
 
 #  mark attendance
 def mark_attendance():
@@ -39,13 +39,13 @@ def mark_attendance():
         "status": status
     })
 
-    print("Attendance marked successfully!\n")
+    print("Attendance marked successfully!")
 
 #  generate student report
 def student_report():
     roll = input("Enter Roll Number: ")
     if roll not in students:
-        print("Student not found!\n")
+        print("Student not found!")
         return
 
     total = present = 0
@@ -116,3 +116,4 @@ def menu():
             print("Invalid choice!\n")
 
 menu()
+
